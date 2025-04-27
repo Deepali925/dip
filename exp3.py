@@ -33,4 +33,14 @@ for ax in axs:
 # Display the subplots
 plt.tight_layout()
 plt.show()
+# median blur
+median=cv2.median blur(image,5)
+cv2.imshow('median blurring',median)
+cv2.waitkey()
+#Bilateral blur
+bilateral=cv2.bilateralFilter(image,9,75,75)
+cv2.imshow('Bilateral Blurring',bilateral)
+cv2.waitkey(0)
+cv2.destroyAlloWindows()
+
 
